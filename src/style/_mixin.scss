@@ -1,0 +1,12 @@
+@mixin btn{
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid;
+}
+@mixin prefixer($property , $value){
+-webkit-#{$property}:$value;
+-moz-#{$property}:$value;
+-o-#{$property}:$value;
+-ms-#{$property}:$value;
+$property:$value;
+}
